@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Space tourism website</title>
+
+    <link rel="stylesheet" href="assets/style.css" />
+    <script defer src="assets/tab.js"></script>
+    <script defer src="assets/index.js"></script>
+  </head>
+  <body class="destinations">
+    <header>
+      <figure class="img-container">
+        <img src="assets/shared/logo.svg" alt="space-logo" />
+      </figure>
+
+      <div class="line-wrapper"><span class="line"></span></div>
+
+      <div class="menu">&#8801;</div>
+      <nav class="nav">
+        <ul class="">
+          <li class="close"><span class="close__inner">&times;</span></li>
+          <li class="text-preset-8">
+            <a href="/" data-active-link="false"><span>00</span> Home</a>
+          </li>
+          <li class="text-preset-8 active">
+            <a href="destination.html" data-active-link="false"
+              ><span>01</span> Destination</a
+            >
+          </li>
+          <li class="text-preset-8">
+            <a href="crew.html" data-active-link="false"
+              ><span>02</span> Crew</a
+            >
+          </li>
+          <li class="text-preset-8">
+            <a href="technology.html" data-active-link="false"
+              ><span>03</span> Technology</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="destination">
+      <div>
+        <small class="mini-title"
+          ><span class="number-title">01</span> Pick your destination</small
+        >
+        <img src="/assets/destination/image-moon.webp" alt="" />
+      </div>
+
+      <div class="description">
+        <div></div>
+
+        <div>
+          <ul class="tabs">
+            <li class="tab active" data-destination="1">
+              <a href="#">Moon</a>
+            </li>
+            <li class="tab" data-destination="2"><a href="#">Mars</a></li>
+            <li class="tab" data-destination="3">
+              <a href="#">Europa</a>
+            </li>
+            <li class="tab" data-destination="4"><a href="#">Titan</a></li>
+          </ul>
+          <h1 class="title"></h1>
+          <p class="intro"></p>
+
+          <div class="line-wrapper line-paragraph">
+            <span class="line"></span>
+          </div>
+
+          <footer>
+            <div>
+              <h3 class="">Avg. distance</h3>
+              <p class="avg-distance text-preset-6"></p>
+            </div>
+            <div>
+              <h3>Est. travel time</h3>
+              <p class="travel-time text-preset-6"></p>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
